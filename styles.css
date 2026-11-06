@@ -220,6 +220,25 @@ blockquote { font-size: clamp(20px, 2.4vw, 28px); font-weight: 500; line-height:
 .focus { margin-top: 16px; }
 .focus-close { margin-top: 48px; }
 
+/* FEATURE CASE (SIPC) */
+.feature { background: #fff; border: 1px solid #DDDBD3; border-radius: 28px; padding: clamp(24px, 4vw, 56px); margin: 32px 0 48px; }
+.feature > * + * { margin-top: 32px; }
+.feature-title { font-size: clamp(28px, 3.4vw, 40px); font-weight: 800; letter-spacing: -1px; line-height: 1.1; margin: 6px 0 14px; }
+.feature-split { gap: 40px; }
+.feature .stack .eyebrow + .body { margin-top: 4px; }
+.feature .stack .body + .eyebrow { margin-top: 24px; }
+.flow { counter-reset: f; display: flex; flex-direction: column; gap: 0; }
+.flow li { counter-increment: f; display: grid; grid-template-columns: 44px 1fr; column-gap: 14px; padding: 14px 0; border-top: 1px solid var(--line); }
+.flow li:last-child { border-bottom: 1px solid var(--line); }
+.flow li::before { content: counter(f, decimal-leading-zero); grid-row: span 2; font-size: 22px; font-weight: 300; color: var(--olive); }
+.flow b { font-size: 18px; }
+.flow span { color: var(--text); font-size: 15px; }
+.principles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.principles p { background: var(--ink); color: var(--on-dark); border-radius: 16px; padding: 20px 22px; font-weight: 600; font-size: 17px; line-height: 1.4; }
+.build { margin-top: 12px !important; }
+.feature .stats { margin-top: 32px; }
+.feature .gallery img { background: var(--paper); }
+
 /* FOOTER */
 .foot { background: var(--ink); color: var(--on-dark-2); border-top: 1px solid #2c2f36; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 24px; font-size: 14px; }
 .foot a { color: var(--lime); text-decoration: none; }
@@ -246,6 +265,7 @@ blockquote { font-size: clamp(20px, 2.4vw, 28px); font-weight: 500; line-height:
   .cases, .grid-3, .stats.three, .gallery { grid-template-columns: 1fr 1fr; }
   .biz-head { grid-template-columns: 1fr; gap: 0; }
   .compare { grid-template-columns: 1fr; gap: 12px; }
+  .principles { grid-template-columns: 1fr; }
   .compare-arrow { transform: rotate(90deg); justify-self: start; padding-left: 20px; }
   .biz-head > img { margin: 0 0 16px; height: 56px; }
 }

@@ -15,7 +15,7 @@
 3. **Design & UX:** Afiliados.com, Vivo News, Oi Jornais, Leia Online, Oi Destinos
 4. **Produto & negócios:** Acordo Fechado (do MVP de 2 dias ao exit) e Justify
 5. **Educação:** ANPEI Architect e treinamentos
-6. **De volta ao código:** IA, vibe coding e novos estudos
+6. **De volta ao código:** IA, vibe coding e novos estudos, com o SIPC, uma plataforma de estudos com IA que construí do zero
 
 ## Como foi feito
 
