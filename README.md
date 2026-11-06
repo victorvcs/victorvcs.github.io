@@ -6,7 +6,7 @@
 
 17+ anos criando produtos e jornadas de usuário, integrando tecnologia, design e estratégia de negócio. Comecei como desenvolvedor, passei por design e UX, cheguei a produto, negócio e inovação, e agora volto ao código com a inteligência artificial (vibe coding).
 
-🔗 **Site:** https://victorcatharino.github.io
+🔗 **Site:** https://victorvcs.github.io
 
 ## O que tem no portfólio
 
