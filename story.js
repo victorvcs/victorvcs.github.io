@@ -12,7 +12,7 @@
     { layer: 'Negócio próprio', title: 'Uma legaltech do zero', text: 'Sócio e head de produto de uma legaltech que conectava pessoas à Justiça por meio de advogados, reduzindo o tempo para entrar com uma ação.', brands: [], kpis: [['5% → 15%','take rate'],['7','de ROI em aquisição']] },
     { layer: 'Inovação aberta', title: 'Startups dentro de uma gigante de energia', text: 'Estruturei o programa de inovação aberta com startups: pilotos rápidos, medidos de perto, e metade deles virando projeto.', brands: [['PowerUp Eletrobras', M('powerup')], ['Innovation Grid', M('innovation-grid')]], kpis: [['25','iniciativas em 9 meses'],['50%','das POCs viraram escala'],['5','polos de inovação']] },
     { layer: 'Inovação e educação', title: 'Inovação com grandes empresas', text: 'Coordenei produtos e programas de inovação com grandes empresas, incluindo as certificações executivas ANPEI Architect e eventos de inovação: curadoria de temas, palestrantes, agenda, produção e facilitação.', brands: [['ANPEI Architect', M('anpei-architect')], ['Comitês Temáticos', M('anpei-comites')], ['Rotas Inovadoras', M('rotas-inovadoras')]], kpis: [['+R$27MM','em valor gerado'],['+1.100','conexões'],['+450','formados'],['+19','eventos de inovação']] },
-    { layer: 'Negócio + IA', title: 'Da ideia à solução validada', text: 'Uso a visão de negócio e a inteligência artificial para criar soluções e validar produtos rápido, como o SIPC, sempre com foco no valor para o cliente.', brands: [], kpis: [['7 semanas','do 1º commit à versão 1.7 do SIPC']], link: ['Abrir o SIPC →', 'https://victorvcs.github.io/sipc/'] },
+    { layer: 'Negócio + IA', title: 'Da ideia à solução validada', text: 'Uso a visão de negócio e a inteligência artificial para criar soluções e validar produtos rápido, como o SIPC, plataforma de estudos com IA que é a artefato da minha proposta de mestrado no PPGOCTS/UFRJ e está em validação.', brands: [], kpis: [['7 semanas','do 1º commit à versão 1.7 do SIPC']], link: ['Abrir o SIPC →', 'https://victorvcs.github.io/sipc/'] },
   ];
   const items = [...tl.children];
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -62,10 +62,8 @@
   show(0);
 })();
 
-// Resultados com abas (setas do teclado trocam de aba).
-(() => {
-  const list = document.querySelector('.rtabs');
-  if (!list) return;
+// Abas (resultados e certificações); setas do teclado trocam de aba.
+document.querySelectorAll('.rtabs').forEach(list => {
   const tabs = [...list.querySelectorAll('[role="tab"]')];
   const select = (t, focus) => {
     tabs.forEach(b => {
@@ -83,4 +81,4 @@
       if (d) { e.preventDefault(); select(tabs[(i + d + tabs.length) % tabs.length], true); }
     });
   });
-})();
+});
