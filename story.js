@@ -7,7 +7,7 @@
   const STORIES = [
     { layer: 'Código e design', title: 'Onde tudo começou', text: 'Entrei como designer de interface e dev front-end no maior varejo digital do país e cresci até UX Lead, cuidando de produtos de mídia e de afiliados.', brands: [['Americanas', M('americanas')], ['Submarino', M('submarino')], ['Shoptime', M('shoptime')], ['Afiliados.com', M('afiliados')], ['B2W Ads', M('b2w-ads')], ['Admatic', M('admatic')]], kpis: [['15 → 53','NPS da plataforma de afiliados'],['24%','do GMV da Black Friday via afiliados']] },
     { layer: 'Negócio próprio', title: 'A primeira startup', caseId: 'case-acordo', text: 'Cofundei uma plataforma de acordos online. Validamos a ideia com um MVP feito em 2 dias, crescemos com clientes white label e saímos com a empresa lucrativa.', brands: [], kpis: [['2 dias','para o MVP ir ao ar'],['10 mil','casos em 5 meses'],['+180 mil','casos e exit']] },
-    { layer: 'Produto e UX', title: 'Apps para grandes operadoras', text: 'Liderei produto e UX de apps de notícias e mídia para grandes operadoras de telecom, usados por milhões de pessoas, com um design system que reduziu de 3 meses para 20 dias o tempo para colocar um app no ar.', brands: [['Oi Jornais', M('oi-jornais')], ['Vivo News', M('vivo-news')], ['TIM Banca Virtual', M('tim-banca')], ['Áudio News', M('audio-news')]], kpis: [['1,3 → 4,6','nota nas lojas de apps'],['3 meses → 20 dias','para subir um app'],['−30%','chamados no suporte']] },
+    { layer: 'Produto e UX', title: 'Apps para grandes operadoras', caseId: 'case-ds', text: 'Liderei produto e UX de apps de notícias e mídia para grandes operadoras de telecom, usados por milhões de pessoas, com um design system que reduziu de 3 meses para 20 dias o tempo para colocar um app no ar.', brands: [['Oi Jornais', M('oi-jornais')], ['Vivo News', M('vivo-news')], ['TIM Banca Virtual', M('tim-banca')], ['Áudio News', M('audio-news')]], kpis: [['1,3 → 4,6','nota nas lojas de apps'],['3 meses → 20 dias','para subir um app'],['−30%','chamados no suporte']] },
     { layer: 'Produto mobile e growth', title: 'Escala num marketplace', caseId: 'case-getninjas', text: 'Gerente de produto mobile num marketplace de serviços com milhões de usuários, com foco em ativar e reter os profissionais que atendem os clientes.', brands: [], kpis: [['+155%','de aumento na ativação, recorde em 2022'],['4,5x','mais recorrência'],['+22%','de downloads']] },
     { layer: 'Negócio próprio', title: 'Uma legaltech do zero', caseId: 'case-justify', text: 'Sócio e head de produto de uma legaltech que conectava pessoas à Justiça por meio de advogados, reduzindo o tempo para entrar com uma ação.', brands: [], kpis: [['5% → 15%','take rate'],['7','de ROI em aquisição']] },
     { layer: 'Inovação aberta', title: 'Startups dentro de uma gigante de energia', caseId: 'case-eletrobras', text: 'Estruturei o programa de inovação aberta com startups: pilotos rápidos, medidos de perto, e metade deles virando projeto.', brands: [['PowerUp Eletrobras', M('powerup')], ['Innovation Grid', M('innovation-grid')]], kpis: [['25','iniciativas em 9 meses'],['50%','das POCs viraram escala'],['5','polos de inovação']] },
@@ -187,3 +187,12 @@ document.querySelectorAll('.rtabs').forEach(list => {
     tl.scrollTo({ left: Math.max(0, left), behavior: reduce ? 'auto' : 'smooth' });
   }).observe(tl, { subtree: true, attributes: true, attributeFilter: ['class'] });
 })();
+
+// Demonstração de temas do Design System: os mesmos componentes, só os tokens mudam.
+document.querySelectorAll('.ds-demo').forEach(demo => {
+  const btns = [...demo.querySelectorAll('.ds-themes button')];
+  btns.forEach(b => b.addEventListener('click', () => {
+    demo.dataset.theme = b.dataset.t;
+    btns.forEach(x => x.setAttribute('aria-pressed', x === b));
+  }));
+});
