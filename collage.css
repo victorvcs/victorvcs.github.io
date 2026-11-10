@@ -534,3 +534,58 @@ a.stat-link { text-decoration: none; display: inline-block; }
   .l2 .tools { top: -30px; }
   .l2 .word .tool { --s: 32px; }
 }
+
+/* =========================================================
+   UX: heurísticas de Nielsen + performance
+   ========================================================= */
+img { height: auto; }
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* Acessibilidade de teclado: foco sempre visível (H1, H7) */
+:focus-visible { outline: 3px solid var(--lime); outline-offset: 3px; border-radius: 6px; }
+.skip-link { position: fixed; left: 16px; top: -60px; z-index: 200; background: var(--lime); color: var(--ink); font-weight: 700; padding: 10px 16px; border-radius: 30px; text-decoration: none; transition: top .2s; }
+.skip-link:focus { top: 12px; }
+
+/* Onde estou no menu (H1, H6) */
+.nav nav a[aria-current="true"]:not(.nav-cta) { color: var(--lime); }
+.nav nav a:not(.nav-cta) { position: relative; }
+@media (min-width: 861px) { .nav nav a[aria-current="true"]:not(.nav-cta)::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: var(--lime); border-radius: 2px; } }
+
+/* Voltar ao topo (H3) */
+.to-top { position: fixed; right: 20px; bottom: 20px; z-index: 60; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--lime); font-size: 20px; font-weight: 800; text-decoration: none; box-shadow: 0 8px 20px rgba(0,0,0,.25); opacity: 0; transform: translateY(12px); pointer-events: none; transition: opacity .25s, transform .25s; }
+.to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+.to-top:hover { background: var(--lime); color: var(--ink); }
+
+/* Dicas de uso (H10) */
+.tl-hint, .tabs-hint { font-size: 14px; color: var(--muted); margin-top: 18px; }
+.tl-hint::before, .tabs-hint::before { content: "☝ "; }
+.hint-touch { display: none; }
+@media (hover: none) { .hint-touch { display: inline; } .hint-mouse { display: none; } }
+.tabs-hint .hint-touch { display: none; }
+@media (max-width: 860px) { .tabs-hint .hint-touch { display: inline; } }
+
+/* Abas de resultado: indica que há mais para deslizar no celular */
+@media (max-width: 860px) {
+  .rtabs { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
+}
+
+/* Linha do tempo em faixa horizontal no tablet e no celular (H6: história logo abaixo do ano) */
+@media (max-width: 1100px) {
+  .timeline { display: flex !important; gap: 0; overflow-x: auto; scroll-snap-type: x mandatory; padding: 10px 0 6px; margin: 24px -24px 18px; padding-left: 24px; scrollbar-width: none; -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 24px, #000 85%, transparent); mask-image: linear-gradient(90deg, transparent 0, #000 24px, #000 85%, transparent); }
+  .timeline::-webkit-scrollbar { display: none; }
+  .timeline li { flex: 0 0 150px; scroll-snap-align: start; padding-right: 14px; }
+  .timeline li .role { display: none; }
+  .timeline .logo { height: 44px; margin-bottom: 8px; }
+  .timeline .logo img { max-height: 36px; max-width: 96px; }
+  .year { font-size: 26px; }
+  .tl-story { margin-top: 0; }
+}
+@media (max-width: 860px) { .timeline { margin-left: -16px; margin-right: -16px; padding-left: 16px; } .timeline li { flex-basis: 128px; } }
+
+/* Alvos de toque confortáveis no celular (Nielsen Norman: ≥ 44px) */
+@media (hover: none) {
+  .more summary { padding: 8px 12px 8px 6px; }
+  .stat-link { padding: 8px 0; }
+  .tl-nav button { width: 44px; height: 44px; }
+}
+@media (max-width: 1100px) { .timeline { scroll-padding-left: 40px; } }

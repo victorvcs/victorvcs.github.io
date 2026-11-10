@@ -139,3 +139,51 @@ document.querySelectorAll('.rtabs').forEach(list => {
   window.addEventListener('popstate', () => { pushed = false; fromHash(); });
   fromHash();
 })();
+
+// UX: menu indica a seção atual, botão de voltar ao topo e animações só quando visíveis.
+(() => {
+  const links = [...document.querySelectorAll('#menu a[href^="#"]:not(.nav-cta)')];
+  const targets = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  // A seção "ativa" vai do alvo do link até o alvo do próximo link na ordem da página.
+  const order = links.map((a, i) => ({ a, el: targets[i] })).filter(x => x.el).sort((x, y) => x.el.compareDocumentPosition(y.el) & 2 ? 1 : -1);
+  const toTop = document.querySelector('.to-top');
+  let ticking = false;
+  const update = () => {
+    ticking = false;
+    const y = window.scrollY + 120;
+    let current = null;
+    for (const x of order) if (x.el.getBoundingClientRect().top + window.scrollY <= y) current = x.a;
+    links.forEach(a => a.toggleAttribute('aria-current', a === current));
+    links.forEach(a => { if (a === current) a.setAttribute('aria-current', 'true'); });
+    if (toTop) toTop.classList.toggle('show', window.scrollY > window.innerHeight * 1.2);
+  };
+  window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  update();
+  if (toTop) toTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); document.querySelector('.nav-brand')?.focus({ preventScroll: true }); });
+})();
+
+// Linha do tempo: ao tocar/clicar num ano, garante que a história esteja à vista;
+// na faixa horizontal (tablet e celular), mantém o ano ativo visível.
+(() => {
+  const tl = document.querySelector('.timeline');
+  const box = document.querySelector('.tl-story');
+  if (!tl || !box) return;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  tl.addEventListener('click', e => {
+    if (!e.target.closest('li')) return;
+    requestAnimationFrame(() => {
+      const r = box.getBoundingClientRect();
+      if (r.top >= 70 && r.bottom <= window.innerHeight) return;
+      // Deixa a faixa de anos à vista quando cabe; senão, leva a história para logo abaixo do menu.
+      const room = window.innerHeight - r.height;
+      const offset = room > 220 ? room - 24 : 76;
+      window.scrollTo({ top: r.top + window.scrollY - offset, behavior: reduce ? 'auto' : 'smooth' });
+    });
+  });
+  new MutationObserver(() => {
+    const li = tl.querySelector('li.active');
+    if (!li || tl.scrollWidth <= tl.clientWidth) return;
+    const left = li.offsetLeft - tl.offsetLeft - 48;
+    tl.scrollTo({ left: Math.max(0, left), behavior: reduce ? 'auto' : 'smooth' });
+  }).observe(tl, { subtree: true, attributes: true, attributeFilter: ['class'] });
+})();

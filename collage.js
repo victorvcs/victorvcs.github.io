@@ -44,10 +44,13 @@ document.querySelectorAll('.letras').forEach(panel => {
       d.x += (d.ox - d.x) * .06; d.y += (d.oy - d.y) * .06;
       ctx.beginPath(); ctx.arc(d.x, d.y, d.r, 0, 7); ctx.fill();
     }
-    if (!reduce) requestAnimationFrame(tick);
+    if (!reduce && visible) requestAnimationFrame(tick); else running = false;
   };
   panel.addEventListener('pointermove', e => { const r = panel.getBoundingClientRect(); m = { x: e.clientX - r.left, y: e.clientY - r.top }; });
   panel.addEventListener('pointerleave', () => m = { x: -999, y: -999 });
+  let visible = true, running = true;
+  new IntersectionObserver(([e]) => { visible = e.isIntersecting; if (visible && !running && !reduce) { running = true; requestAnimationFrame(tick); } }).observe(panel);
+  document.addEventListener('visibilitychange', () => { visible = !document.hidden; if (visible && !running && !reduce) { running = true; requestAnimationFrame(tick); } });
   new ResizeObserver(resize).observe(panel); resize(); tick();
 });
 

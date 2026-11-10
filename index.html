@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="collage.css">
 </head>
 <body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="nav" id="topo">
   <a class="nav-brand" href="#topo">Victor Catharino</a>
@@ -31,7 +32,7 @@
   </nav>
 </header>
 
-<main>
+<main id="conteudo">
 
 <!-- CAPA -->
 <section class="hero">
@@ -109,7 +110,7 @@
     <div class="sticker-card dark">
       <div class="dots"></div>
       <span class="pill">PRODUTO · UX · IA</span>
-      <img class="me" src="assets/img/victor-recorte.png" alt="Retrato de Victor Catharino">
+      <img decoding="async" width="633" height="620" class="me" src="assets/img/victor-recorte.png" alt="Retrato de Victor Catharino">
       <span class="tool float" data-t="jira" style="left:10%;top:7%;--r:-8deg"></span>
       <span class="tool float" data-t="figma" style="left:31%;top:5%;--r:6deg;--d:-2s"></span>
       <span class="tool float" data-t="ppt" style="right:31%;top:5%;--r:-6deg;--d:-3s"></span>
@@ -127,9 +128,9 @@
       <p class="body">Graduado em Sistemas de Informação e pós-graduado em Design Estratégico e Experiência do Usuário. Há mais de 17 anos crio produtos e jornadas de usuário integrando tecnologia, design e estratégia de negócio, com passagens por B2W, GetNinjas e Eletrobras.</p>
       <p class="body">Fui <b>Gerente de Produto e Inovação na ANPEI</b>, com foco em iniciativas de inteligência artificial e inovação. Hoje uso a visão de negócio e a IA para <b>tirar ideias do papel</b>: crio soluções que validam produtos e geram valor para usuários e clientes.</p>
       <div class="links">
-        <a href="https://www.linkedin.com/in/victorcatharino/" target="_blank" rel="noopener">LinkedIn →</a>
-        <a href="https://drive.google.com/file/d/1_82c2J2s6WAMPSWzd-rLjINIOh1xkbjq/view" target="_blank" rel="noopener">Currículo completo →</a>
-        <a href="https://drive.google.com/file/d/1Zn7vbQXrGvbI4UPzg7l2ZlCF-7MDdKbp/view" target="_blank" rel="noopener">Jornada em PDF →</a>
+        <a href="https://www.linkedin.com/in/victorcatharino/" target="_blank" rel="noopener">LinkedIn →<span class="sr-only"> (abre em nova aba)</span></a>
+        <a href="https://drive.google.com/file/d/1_82c2J2s6WAMPSWzd-rLjINIOh1xkbjq/view" target="_blank" rel="noopener">Currículo completo →<span class="sr-only"> (abre em nova aba)</span></a>
+        <a href="https://drive.google.com/file/d/1Zn7vbQXrGvbI4UPzg7l2ZlCF-7MDdKbp/view" target="_blank" rel="noopener">Jornada em PDF →<span class="sr-only"> (abre em nova aba)</span></a>
       </div>
     </div>
   </div>
@@ -167,6 +168,7 @@
   <div class="wrap">
     <p class="eyebrow olive">01 · Resultados</p>
     <h2>Impacto medido em números.</h2>
+    <p class="tabs-hint">Escolha um tema<span class="hint-touch"> e deslize para ver todos</span>:</p>
     <div class="rtabs" role="tablist" aria-label="Tipos de resultado">
       <button type="button" role="tab" id="rt-inovacao" aria-controls="rp-inovacao" aria-selected="true">Inovação <span>8</span></button>
       <button type="button" role="tab" id="rt-ux" aria-controls="rp-ux" aria-selected="false" tabindex="-1">Experiência do usuário <span>3</span></button>
@@ -175,41 +177,41 @@
       <button type="button" role="tab" id="rt-negocio" aria-controls="rp-negocio" aria-selected="false" tabindex="-1">Negócio <span>5</span></button>
     </div>
     <div class="stats rpanel" role="tabpanel" id="rp-inovacao" aria-labelledby="rt-inovacao">
-        <div class="stat"><p class="num">R$6MM</p><p>contrato do Sebrae com a ANPEI sob a minha gestão, para conectar startups e grandes corporações</p><button type="button" class="stat-link" data-open="case-architect">Ver o case →</button><details class="more"><summary>Contexto</summary><p>Contrato do Sebrae com a ANPEI para aproximar startups das dores de grandes corporações. Eu fiz a gestão do contrato e das entregas.</p></details><img src="assets/img/logo-anpei.png" alt="ANPEI"></div>
-        <div class="stat"><p class="num">+R$27MM</p><p>em valor gerado em inovação</p><details class="more"><summary>Contexto</summary><p>Valor gerado por iniciativas do portfólio de produtos da ANPEI, como a Olimpíada de Inovação, realizada dentro de empresas como Natura, Grupo Boticário, Indovinya e Eletrobras, entre outras.</p></details><img src="assets/img/logo-anpei.png" alt="ANPEI"></div>
-        <div class="stat"><p class="num">+1.100</p><p>conexões estratégicas geradas</p><details class="more"><summary>Contexto</summary><p>Conexões entre empresas, startups e instituições geradas nos eventos da ANPEI: Rotas Inovadoras, Comitês Temáticos e Fóruns de Inovação.</p></details><img src="assets/img/logo-anpei.png" alt="ANPEI"></div>
-        <div class="stat"><p class="num">+450</p><p>profissionais formados em certificações com projetos aplicados em inovação</p><details class="more"><summary>Contexto</summary><p>Profissionais formados nas certificações ANPEI Architect, todas com projeto aplicado avaliado por banca.</p></details><img src="assets/img/logo-anpei.png" alt="ANPEI"></div>
-        <div class="stat"><p class="num">+19</p><p>eventos de inovação de médio e grande porte para o ecossistema brasileiro: curadoria de temas, palestrantes, agenda, produção e facilitação</p><button type="button" class="stat-link" data-open="case-eletrobras">Ver o case →</button><details class="more"><summary>Contexto</summary><p>Eventos da ANPEI: Rotas Inovadoras, Comitês Temáticos (Deep Tech, bioeconomia e outros temas), Fóruns de Inovação e um grande evento anual.</p></details><img src="assets/img/logo-anpei.png" alt="ANPEI"></div>
-        <div class="stat"><p class="num">50%</p><p>de conversão de POCs em projetos de escala</p><details class="more"><summary>Contexto</summary><p>Das POCs do PowerUp, metade foi recomendada para escala pelas áreas de negócio da Eletrobras, com orçamento direcionado ao rollout. Isso veio do processo: POCs nascidas de dores reais das áreas, contratação mais rápida com suprimentos e cibersegurança e jurídico alinhados desde o início.</p></details><img src="assets/img/logo-eletrobras.png" alt="Eletrobras"></div>
-        <div class="stat"><p class="num">25</p><p>iniciativas de inovação aberta com soluções contratadas em 9 meses</p><button type="button" class="stat-link" data-open="case-eletrobras">Ver o case →</button><details class="more"><summary>Contexto</summary><p>Startups contratadas pelo PowerUp para resolver dores das áreas de negócio, do scouting à prova de conceito.</p></details><img src="assets/img/logo-eletrobras.png" alt="Eletrobras"></div>
-        <div class="stat"><p class="num">5</p><p>polos de inovação estruturados</p><button type="button" class="stat-link" data-open="case-eletrobras">Ver o case →</button><details class="more"><summary>Contexto</summary><p>Polos de inovação estruturados fora do eixo Sul-Sudeste, com hubs e startups locais conectados às dores da Eletrobras.</p></details><img src="assets/img/logo-eletrobras.png" alt="Eletrobras"></div>
+        <div class="stat"><p class="num">R$6MM</p><p>contrato do Sebrae com a ANPEI sob a minha gestão, para conectar startups e grandes corporações</p><button type="button" class="stat-link" data-open="case-architect">Ver o case →</button><details class="more"><summary>Contexto</summary><p>Contrato do Sebrae com a ANPEI para aproximar startups das dores de grandes corporações. Eu fiz a gestão do contrato e das entregas.</p></details><img decoding="async" width="191" height="45" src="assets/img/logo-anpei.png" alt="ANPEI"></div>
+        <div class="stat"><p class="num">+R$27MM</p><p>em valor gerado em inovação</p><details class="more"><summary>Contexto</summary><p>Valor gerado por iniciativas do portfólio de produtos da ANPEI, como a Olimpíada de Inovação, realizada dentro de empresas como Natura, Grupo Boticário, Indovinya e Eletrobras, entre outras.</p></details><img decoding="async" width="191" height="45" src="assets/img/logo-anpei.png" alt="ANPEI"></div>
+        <div class="stat"><p class="num">+1.100</p><p>conexões estratégicas geradas</p><details class="more"><summary>Contexto</summary><p>Conexões entre empresas, startups e instituições geradas nos eventos da ANPEI: Rotas Inovadoras, Comitês Temáticos e Fóruns de Inovação.</p></details><img decoding="async" width="191" height="45" src="assets/img/logo-anpei.png" alt="ANPEI"></div>
+        <div class="stat"><p class="num">+450</p><p>profissionais formados em certificações com projetos aplicados em inovação</p><details class="more"><summary>Contexto</summary><p>Profissionais formados nas certificações ANPEI Architect, todas com projeto aplicado avaliado por banca.</p></details><img decoding="async" width="191" height="45" src="assets/img/logo-anpei.png" alt="ANPEI"></div>
+        <div class="stat"><p class="num">+19</p><p>eventos de inovação de médio e grande porte para o ecossistema brasileiro: curadoria de temas, palestrantes, agenda, produção e facilitação</p><button type="button" class="stat-link" data-open="case-eletrobras">Ver o case →</button><details class="more"><summary>Contexto</summary><p>Eventos da ANPEI: Rotas Inovadoras, Comitês Temáticos (Deep Tech, bioeconomia e outros temas), Fóruns de Inovação e um grande evento anual.</p></details><img decoding="async" width="191" height="45" src="assets/img/logo-anpei.png" alt="ANPEI"></div>
+        <div class="stat"><p class="num">50%</p><p>de conversão de POCs em projetos de escala</p><details class="more"><summary>Contexto</summary><p>Das POCs do PowerUp, metade foi recomendada para escala pelas áreas de negócio da Eletrobras, com orçamento direcionado ao rollout. Isso veio do processo: POCs nascidas de dores reais das áreas, contratação mais rápida com suprimentos e cibersegurança e jurídico alinhados desde o início.</p></details><img decoding="async" width="402" height="249" src="assets/img/logo-eletrobras.png" alt="Eletrobras"></div>
+        <div class="stat"><p class="num">25</p><p>iniciativas de inovação aberta com soluções contratadas em 9 meses</p><button type="button" class="stat-link" data-open="case-eletrobras">Ver o case →</button><details class="more"><summary>Contexto</summary><p>Startups contratadas pelo PowerUp para resolver dores das áreas de negócio, do scouting à prova de conceito.</p></details><img decoding="async" width="402" height="249" src="assets/img/logo-eletrobras.png" alt="Eletrobras"></div>
+        <div class="stat"><p class="num">5</p><p>polos de inovação estruturados</p><button type="button" class="stat-link" data-open="case-eletrobras">Ver o case →</button><details class="more"><summary>Contexto</summary><p>Polos de inovação estruturados fora do eixo Sul-Sudeste, com hubs e startups locais conectados às dores da Eletrobras.</p></details><img decoding="async" width="402" height="249" src="assets/img/logo-eletrobras.png" alt="Eletrobras"></div>
     </div>
     <div class="stats rpanel" role="tabpanel" id="rp-ux" aria-labelledby="rt-ux" hidden>
-        <div class="stat"><p class="num">1,3 → 4,6</p><p>nota média nas lojas de aplicativos, em todos os produtos</p><a class="stat-link" href="https://www.behance.net/gallery/183426517/Afiliadoscom-B2W-Digital-UI-e-UX-Design" target="_blank" rel="noopener">Ver o antes e depois no Behance →</a><details class="more"><summary>Contexto</summary><p>Nos apps de mídia para operadoras, como Oi Jornais, Vivo News e TIM Banca Virtual. A nota subiu com melhorias guiadas pelos comentários e feedbacks das lojas, evoluindo o produto a cada versão.</p></details><img src="assets/img/logo-bennu.png" alt="Bennu"></div>
-        <div class="stat"><p class="num">15 → 53</p><p>NPS da plataforma de afiliados, de 2018 para 2019</p><details class="more"><summary>Contexto</summary><p>Redesign do painel do Afiliados.com, a plataforma de afiliados da B2W: de uma interface carregada para um painel claro e orientado a dados, com antes e depois no Behance.</p></details><img src="assets/img/logo-b2w.png" alt="B2W Digital"></div>
-        <div class="stat"><p class="num">−30%</p><p>chamados no Zendesk</p><button type="button" class="stat-link" data-open="case-getninjas-app">Ver o case →</button><details class="more"><summary>Contexto</summary><p>Nos apps de operadora (Oi, Vivo News, TIM Banca Virtual). Melhoramos a experiência a partir dos comentários das lojas e das pesquisas de NPS, e comparamos um mês com o seguinte ao longo de 2 meses.</p></details><img src="assets/img/logo-bennu.png" alt="Bennu"></div>
+        <div class="stat"><p class="num">1,3 → 4,6</p><p>nota média nas lojas de aplicativos, em todos os produtos</p><a class="stat-link" href="https://www.behance.net/gallery/183426517/Afiliadoscom-B2W-Digital-UI-e-UX-Design" target="_blank" rel="noopener">Ver o antes e depois no Behance →<span class="sr-only"> (abre em nova aba)</span></a><details class="more"><summary>Contexto</summary><p>Nos apps de mídia para operadoras, como Oi Jornais, Vivo News e TIM Banca Virtual. A nota subiu com melhorias guiadas pelos comentários e feedbacks das lojas, evoluindo o produto a cada versão.</p></details><img decoding="async" width="316" height="87" src="assets/img/logo-bennu.png" alt="Bennu"></div>
+        <div class="stat"><p class="num">15 → 53</p><p>NPS da plataforma de afiliados, de 2018 para 2019</p><details class="more"><summary>Contexto</summary><p>Redesign do painel do Afiliados.com, a plataforma de afiliados da B2W: de uma interface carregada para um painel claro e orientado a dados, com antes e depois no Behance.</p></details><img decoding="async" width="800" height="800" src="assets/img/logo-b2w.png" alt="B2W Digital"></div>
+        <div class="stat"><p class="num">−30%</p><p>chamados no Zendesk</p><button type="button" class="stat-link" data-open="case-getninjas-app">Ver o case →</button><details class="more"><summary>Contexto</summary><p>Nos apps de operadora (Oi, Vivo News, TIM Banca Virtual). Melhoramos a experiência a partir dos comentários das lojas e das pesquisas de NPS, e comparamos um mês com o seguinte ao longo de 2 meses.</p></details><img decoding="async" width="316" height="87" src="assets/img/logo-bennu.png" alt="Bennu"></div>
         <div class="stat dark"><p class="eyebrow">Como</p><p class="callout-sm">Pesquisa com usuários e design thinking para enxergar as dores reais antes de desenhar.</p></div>
     </div>
     <div class="stats rpanel" role="tabpanel" id="rp-mobile" aria-labelledby="rt-mobile" hidden>
-        <div class="stat"><p class="num">Milhões</p><p>de usuários no app do GetNinjas, o marketplace de serviços</p><button type="button" class="stat-link" data-open="case-getninjas">Ver o case →</button><img src="assets/img/logo-getninjas.png" alt="GetNinjas"></div>
-        <div class="stat"><p class="num">Milhões</p><p>de usuários nos apps de mídia das operadoras, como o TIM Banca Virtual</p><img src="assets/img/logo-bennu.png" alt="Bennu"></div>
-        <div class="stat"><p class="num">+155%</p><p>de aumento na taxa de ativação: a maior da história da empresa, em 2022</p><button type="button" class="stat-link" data-open="case-getninjas">Ver o case →</button><img src="assets/img/logo-getninjas.png" alt="GetNinjas"></div>
-        <div class="stat"><p class="num">4,5x</p><p>mais recorrência para usuários com 1º pedido no app</p><details class="more"><summary>Contexto</summary><p>Decidimos priorizar o app do cliente. A hipótese: no site, o cliente só lembrava do GetNinjas quando tinha um problema; no app, com notificações, a marca ficaria presente para a próxima necessidade. Em cerca de 3 meses após as primeiras versões, quem fez o 1º pedido pelo app voltou 4,5 vezes mais.</p></details><img src="assets/img/logo-getninjas.png" alt="GetNinjas"></div>
-        <div class="stat"><p class="num">+22%</p><p>de downloads do app</p><button type="button" class="stat-link" data-open="case-getninjas-app">Ver o case →</button><img src="assets/img/logo-getninjas.png" alt="GetNinjas"></div>
-        <div class="stat"><p class="num">+18%</p><p>de engajamento nos apps</p><img src="assets/img/logo-bennu.png" alt="Bennu"></div>
-        <div class="stat"><p class="num">+29%</p><p>de aquisição de usuários</p><img src="assets/img/logo-bennu.png" alt="Bennu"></div>
+        <div class="stat"><p class="num">Milhões</p><p>de usuários no app do GetNinjas, o marketplace de serviços</p><button type="button" class="stat-link" data-open="case-getninjas">Ver o case →</button><img decoding="async" width="375" height="71" src="assets/img/logo-getninjas.png" alt="GetNinjas"></div>
+        <div class="stat"><p class="num">Milhões</p><p>de usuários nos apps de mídia das operadoras, como o TIM Banca Virtual</p><img decoding="async" width="316" height="87" src="assets/img/logo-bennu.png" alt="Bennu"></div>
+        <div class="stat"><p class="num">+155%</p><p>de aumento na taxa de ativação: a maior da história da empresa, em 2022</p><button type="button" class="stat-link" data-open="case-getninjas">Ver o case →</button><img decoding="async" width="375" height="71" src="assets/img/logo-getninjas.png" alt="GetNinjas"></div>
+        <div class="stat"><p class="num">4,5x</p><p>mais recorrência para usuários com 1º pedido no app</p><details class="more"><summary>Contexto</summary><p>Decidimos priorizar o app do cliente. A hipótese: no site, o cliente só lembrava do GetNinjas quando tinha um problema; no app, com notificações, a marca ficaria presente para a próxima necessidade. Em cerca de 3 meses após as primeiras versões, quem fez o 1º pedido pelo app voltou 4,5 vezes mais.</p></details><img decoding="async" width="375" height="71" src="assets/img/logo-getninjas.png" alt="GetNinjas"></div>
+        <div class="stat"><p class="num">+22%</p><p>de downloads do app</p><button type="button" class="stat-link" data-open="case-getninjas-app">Ver o case →</button><img decoding="async" width="375" height="71" src="assets/img/logo-getninjas.png" alt="GetNinjas"></div>
+        <div class="stat"><p class="num">+18%</p><p>de engajamento nos apps</p><img decoding="async" width="316" height="87" src="assets/img/logo-bennu.png" alt="Bennu"></div>
+        <div class="stat"><p class="num">+29%</p><p>de aquisição de usuários</p><img decoding="async" width="316" height="87" src="assets/img/logo-bennu.png" alt="Bennu"></div>
         <div class="stat dark"><p class="eyebrow">Como</p><p class="callout-sm">Decisões de produto guiadas por métricas de ativação, recorrência e aquisição.</p></div>
     </div>
     <div class="stats rpanel" role="tabpanel" id="rp-ds" aria-labelledby="rt-ds" hidden>
-        <div class="stat"><p class="num">3 meses → 20 dias</p><p>para colocar um novo app no ar, depois do Design System</p><details class="more"><summary>Contexto</summary><p>Antes, a Bennu levava cerca de 3 meses para desenvolver um app. Com a interface no Figma e uma biblioteca de componentes codados, o prazo caiu para cerca de 20 dias.</p></details><img src="assets/img/logo-bennu.png" alt="Bennu"></div>
+        <div class="stat"><p class="num">3 meses → 20 dias</p><p>para colocar um novo app no ar, depois do Design System</p><details class="more"><summary>Contexto</summary><p>Antes, a Bennu levava cerca de 3 meses para desenvolver um app. Com a interface no Figma e uma biblioteca de componentes codados, o prazo caiu para cerca de 20 dias.</p></details><img decoding="async" width="316" height="87" src="assets/img/logo-bennu.png" alt="Bennu"></div>
         <div class="stat dark"><p class="eyebrow">Como</p><p class="callout-sm">Treinei desenvolvedores e designers para criar os componentes codados, com design tokens, componentes reaproveitáveis no Figma e temas para adaptar o mesmo sistema aos apps de cada operadora.</p></div>
     </div>
     <div class="stats rpanel" role="tabpanel" id="rp-negocio" aria-labelledby="rt-negocio" hidden>
-        <div class="stat"><p class="num">24%</p><p>do GMV da Black Friday veio do canal de afiliados: o maior canal</p><img src="assets/img/logo-b2w.png" alt="B2W Digital"></div>
-        <div class="stat"><p class="num">10 mil</p><p>casos em 5 meses, a partir de um MVP feito em 2 dias</p><button type="button" class="stat-link" data-open="case-acordo">Ver o case →</button><img src="assets/img/logo-acordo-fechado.png" alt="Acordo Fechado"></div>
-        <div class="stat"><p class="num">+180 mil</p><p>casos, 2ª rodada de investimento e exit com empresa lucrativa</p><button type="button" class="stat-link" data-open="case-acordo">Ver o case →</button><img src="assets/img/logo-acordo-fechado.png" alt="Acordo Fechado"></div>
-        <div class="stat"><p class="num">5% → 15%</p><p>take rate, de 2022 para 2023</p><button type="button" class="stat-link" data-open="case-justify">Ver o case →</button><img src="assets/img/logo-justify.png" alt="Justify"></div>
-        <div class="stat"><p class="num">7</p><p>de ROI sobre o investimento em aquisição (2023)</p><button type="button" class="stat-link" data-open="case-justify">Ver o case →</button><img src="assets/img/logo-justify.png" alt="Justify"></div>
+        <div class="stat"><p class="num">24%</p><p>do GMV da Black Friday veio do canal de afiliados: o maior canal</p><img decoding="async" width="800" height="800" src="assets/img/logo-b2w.png" alt="B2W Digital"></div>
+        <div class="stat"><p class="num">10 mil</p><p>casos em 5 meses, a partir de um MVP feito em 2 dias</p><button type="button" class="stat-link" data-open="case-acordo">Ver o case →</button><img decoding="async" width="160" height="69" src="assets/img/logo-acordo-fechado.png" alt="Acordo Fechado"></div>
+        <div class="stat"><p class="num">+180 mil</p><p>casos, 2ª rodada de investimento e exit com empresa lucrativa</p><button type="button" class="stat-link" data-open="case-acordo">Ver o case →</button><img decoding="async" width="160" height="69" src="assets/img/logo-acordo-fechado.png" alt="Acordo Fechado"></div>
+        <div class="stat"><p class="num">5% → 15%</p><p>take rate, de 2022 para 2023</p><button type="button" class="stat-link" data-open="case-justify">Ver o case →</button><img decoding="async" width="444" height="162" src="assets/img/logo-justify.png" alt="Justify"></div>
+        <div class="stat"><p class="num">7</p><p>de ROI sobre o investimento em aquisição (2023)</p><button type="button" class="stat-link" data-open="case-justify">Ver o case →</button><img decoding="async" width="444" height="162" src="assets/img/logo-justify.png" alt="Justify"></div>
     </div>
   </div>
 </section>
@@ -227,21 +229,22 @@
   <div class="wrap">
     <p class="eyebrow olive">02 · Linha do tempo</p>
     <h2>Experiência profissional.</h2>
+    <p class="tl-hint"><span class="hint-touch">Toque</span><span class="hint-mouse">Passe o mouse ou clique</span> num ano para ver a história, os resultados e o case daquela fase.</p>
     <ol class="timeline">
-      <li><div class="logo"><img src="assets/img/logo-b2w.png" alt="B2W Digital"></div><p class="year">2011</p><p class="co">B2W Digital</p><p class="role">Designer de interface, dev front-end, UX designer e UX lead</p></li>
-      <li><div class="logo"><img src="assets/img/logo-acordo-fechado.png" alt="Acordo Fechado"></div><p class="year">2016</p><p class="co">Acordo Fechado</p><p class="role">Sócio e head de produto</p></li>
-      <li><div class="logo"><img src="assets/img/logo-bennu.png" alt="Bennu"></div><p class="year">2019</p><p class="co">Bennu</p><p class="role">Gerente de produto e UX</p></li>
-      <li><div class="logo"><img src="assets/img/logo-getninjas.png" alt="GetNinjas"></div><p class="year">2021</p><p class="co">GetNinjas</p><p class="role">Gerente de produto mobile</p></li>
-      <li><div class="logo"><img src="assets/img/logo-justify.png" alt="Justify"></div><p class="year">2023</p><p class="co">Justify</p><p class="role">Sócio e head de produto</p></li>
-      <li><div class="logo"><img src="assets/img/logo-eletrobras.png" alt="Eletrobras"></div><p class="year">2024</p><p class="co">Eletrobras</p><p class="role">Líder de inovação aberta</p></li>
-      <li><div class="logo"><img src="assets/img/logo-anpei.png" alt="ANPEI"></div><p class="year">2025</p><p class="co">ANPEI</p><p class="role">Gerente de inovação e produto</p></li>
+      <li><div class="logo"><img decoding="async" width="800" height="800" src="assets/img/logo-b2w.png" alt="B2W Digital"></div><p class="year">2011</p><p class="co">B2W Digital</p><p class="role">Designer de interface, dev front-end, UX designer e UX lead</p></li>
+      <li><div class="logo"><img decoding="async" width="160" height="69" src="assets/img/logo-acordo-fechado.png" alt="Acordo Fechado"></div><p class="year">2016</p><p class="co">Acordo Fechado</p><p class="role">Sócio e head de produto</p></li>
+      <li><div class="logo"><img decoding="async" width="316" height="87" src="assets/img/logo-bennu.png" alt="Bennu"></div><p class="year">2019</p><p class="co">Bennu</p><p class="role">Gerente de produto e UX</p></li>
+      <li><div class="logo"><img decoding="async" width="375" height="71" src="assets/img/logo-getninjas.png" alt="GetNinjas"></div><p class="year">2021</p><p class="co">GetNinjas</p><p class="role">Gerente de produto mobile</p></li>
+      <li><div class="logo"><img decoding="async" width="444" height="162" src="assets/img/logo-justify.png" alt="Justify"></div><p class="year">2023</p><p class="co">Justify</p><p class="role">Sócio e head de produto</p></li>
+      <li><div class="logo"><img decoding="async" width="402" height="249" src="assets/img/logo-eletrobras.png" alt="Eletrobras"></div><p class="year">2024</p><p class="co">Eletrobras</p><p class="role">Líder de inovação aberta</p></li>
+      <li><div class="logo"><img decoding="async" width="191" height="45" src="assets/img/logo-anpei.png" alt="ANPEI"></div><p class="year">2025</p><p class="co">ANPEI</p><p class="role">Gerente de inovação e produto</p></li>
       <li class="now"><div class="logo code-mark">&lt;/&gt;</div><p class="year">2026</p><p class="co">Produto com IA</p><p class="role">Soluções com IA para validar negócios</p></li>
     </ol>
     <div class="tl-story" aria-live="polite"></div>
     <p class="statement">Código → design → produto → inovação → <span class="olive">negócios com IA</span>.</p>
     <div class="brands-strip">
       <p class="eyebrow olive">Marcas e produtos em que atuei</p>
-      <div class="marquee"><div class="marquee-track"><img src="assets/img/logo-b2w.png" alt="B2W Digital"><img src="assets/img/marca-americanas.png" alt="Americanas"><img src="assets/img/marca-submarino.png" alt="Submarino"><img src="assets/img/marca-shoptime.png" alt="Shoptime"><img src="assets/img/marca-afiliados.png" alt="Afiliados.com"><img src="assets/img/marca-b2w-ads.png" alt="B2W Ads"><img src="assets/img/marca-admatic.png" alt="Admatic"><img src="assets/img/logo-acordo-fechado.png" alt="Acordo Fechado"><img src="assets/img/logo-bennu.png" alt="Bennu"><img src="assets/img/marca-oi-jornais.png" alt="Oi Jornais"><img src="assets/img/marca-vivo-news.png" alt="Vivo News"><img src="assets/img/marca-tim-banca.png" alt="TIM Banca Virtual"><img src="assets/img/marca-audio-news.png" alt="Áudio News"><img src="assets/img/logo-getninjas.png" alt="GetNinjas"><img src="assets/img/logo-justify.png" alt="Justify"><img src="assets/img/logo-eletrobras.png" alt="Eletrobras"><img src="assets/img/marca-powerup.png" alt="PowerUp Eletrobras"><img src="assets/img/marca-innovation-grid.png" alt="Innovation Grid"><img src="assets/img/logo-anpei.png" alt="ANPEI"><img src="assets/img/marca-anpei-architect.png" alt="ANPEI Architect"><img src="assets/img/marca-anpei-comites.png" alt="Comitês Temáticos"><img src="assets/img/marca-rotas-inovadoras.png" alt="Rotas Inovadoras"><img src="assets/img/marca-startup-weekend.png" alt="Startup Weekend"><img src="assets/img/marca-hacking-rio.png" alt="Hacking.Rio"><img src="assets/img/logo-b2w.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-americanas.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-submarino.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-shoptime.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-afiliados.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-b2w-ads.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-admatic.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/logo-acordo-fechado.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/logo-bennu.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-oi-jornais.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-vivo-news.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-tim-banca.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-audio-news.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/logo-getninjas.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/logo-justify.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/logo-eletrobras.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-powerup.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-innovation-grid.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/logo-anpei.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-anpei-architect.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-anpei-comites.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-rotas-inovadoras.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-startup-weekend.png" alt="" class="dup" aria-hidden="true"><img src="assets/img/marca-hacking-rio.png" alt="" class="dup" aria-hidden="true"></div></div>
+      <div class="marquee"><div class="marquee-track"><img decoding="async" width="800" height="800" src="assets/img/logo-b2w.png" alt="B2W Digital"><img decoding="async" width="320" height="45" src="assets/img/marca-americanas.png" alt="Americanas"><img decoding="async" width="251" height="64" src="assets/img/marca-submarino.png" alt="Submarino"><img decoding="async" width="320" height="62" src="assets/img/marca-shoptime.png" alt="Shoptime"><img decoding="async" width="320" height="69" src="assets/img/marca-afiliados.png" alt="Afiliados.com"><img decoding="async" width="300" height="61" src="assets/img/marca-b2w-ads.png" alt="B2W Ads"><img decoding="async" width="171" height="43" src="assets/img/marca-admatic.png" alt="Admatic"><img decoding="async" width="160" height="69" src="assets/img/logo-acordo-fechado.png" alt="Acordo Fechado"><img decoding="async" width="316" height="87" src="assets/img/logo-bennu.png" alt="Bennu"><img decoding="async" width="320" height="84" src="assets/img/marca-oi-jornais.png" alt="Oi Jornais"><img decoding="async" width="320" height="54" src="assets/img/marca-vivo-news.png" alt="Vivo News"><img decoding="async" width="320" height="38" src="assets/img/marca-tim-banca.png" alt="TIM Banca Virtual"><img decoding="async" width="297" height="96" src="assets/img/marca-audio-news.png" alt="Áudio News"><img decoding="async" width="375" height="71" src="assets/img/logo-getninjas.png" alt="GetNinjas"><img decoding="async" width="444" height="162" src="assets/img/logo-justify.png" alt="Justify"><img decoding="async" width="402" height="249" src="assets/img/logo-eletrobras.png" alt="Eletrobras"><img decoding="async" width="279" height="96" src="assets/img/marca-powerup.png" alt="PowerUp Eletrobras"><img decoding="async" width="96" height="96" src="assets/img/marca-innovation-grid.png" alt="Innovation Grid"><img decoding="async" width="191" height="45" src="assets/img/logo-anpei.png" alt="ANPEI"><img decoding="async" width="320" height="28" src="assets/img/marca-anpei-architect.png" alt="ANPEI Architect"><img decoding="async" width="311" height="96" src="assets/img/marca-anpei-comites.png" alt="Comitês Temáticos"><img decoding="async" width="152" height="96" src="assets/img/marca-rotas-inovadoras.png" alt="Rotas Inovadoras"><img decoding="async" width="227" height="96" src="assets/img/marca-startup-weekend.png" alt="Startup Weekend"><img decoding="async" width="320" height="45" src="assets/img/marca-hacking-rio.png" alt="Hacking.Rio"><img decoding="async" width="800" height="800" src="assets/img/logo-b2w.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="320" height="45" src="assets/img/marca-americanas.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="251" height="64" src="assets/img/marca-submarino.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="320" height="62" src="assets/img/marca-shoptime.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="320" height="69" src="assets/img/marca-afiliados.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="300" height="61" src="assets/img/marca-b2w-ads.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="171" height="43" src="assets/img/marca-admatic.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="160" height="69" src="assets/img/logo-acordo-fechado.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="316" height="87" src="assets/img/logo-bennu.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="320" height="84" src="assets/img/marca-oi-jornais.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="320" height="54" src="assets/img/marca-vivo-news.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="320" height="38" src="assets/img/marca-tim-banca.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="297" height="96" src="assets/img/marca-audio-news.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="375" height="71" src="assets/img/logo-getninjas.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="444" height="162" src="assets/img/logo-justify.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="402" height="249" src="assets/img/logo-eletrobras.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="279" height="96" src="assets/img/marca-powerup.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="96" height="96" src="assets/img/marca-innovation-grid.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="191" height="45" src="assets/img/logo-anpei.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="320" height="28" src="assets/img/marca-anpei-architect.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="311" height="96" src="assets/img/marca-anpei-comites.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="152" height="96" src="assets/img/marca-rotas-inovadoras.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="227" height="96" src="assets/img/marca-startup-weekend.png" alt="" class="dup" aria-hidden="true"><img decoding="async" width="320" height="45" src="assets/img/marca-hacking-rio.png" alt="" class="dup" aria-hidden="true"></div></div>
     </div>
   </div>
 </section>
@@ -273,47 +276,47 @@
   <div class="wrap">
     <div class="cases">
       <article class="case">
-        <div class="case-img"><img src="assets/img/afiliados-antes-depois.jpg" alt="Antes e depois do painel Afiliados.com" loading="lazy"></div>
+        <div class="case-img"><img decoding="async" width="1399" height="660" src="assets/img/afiliados-antes-depois.jpg" alt="Antes e depois do painel Afiliados.com" loading="lazy"></div>
         <p class="tag">B2W Digital · UI e UX Design · Produto</p>
         <h3>Afiliados.com</h3>
         <p>Redesign do painel do programa de afiliados: de uma interface carregada para um dashboard claro e orientado a dados, com versão mobile e biblioteca de componentes.</p>
         <ul class="mini-stats"><li><b>15 → 53</b> NPS de 2018 para 2019</li><li><b>24%</b> do GMV da Black Friday: maior canal</li></ul>
-        <a href="https://www.behance.net/gallery/183426517/Afiliadoscom-B2W-Digital-UI-e-UX-Design" target="_blank" rel="noopener">Ver no Behance →</a>
+        <a href="https://www.behance.net/gallery/183426517/Afiliadoscom-B2W-Digital-UI-e-UX-Design" target="_blank" rel="noopener">Ver no Behance →<span class="sr-only"> (abre em nova aba)</span></a>
       </article>
       <article class="case">
-        <div class="case-img"><img src="assets/img/vivo-news.png" alt="Telas do app Vivo News" loading="lazy"></div>
+        <div class="case-img"><img decoding="async" width="591" height="591" src="assets/img/vivo-news.png" alt="Telas do app Vivo News" loading="lazy"></div>
         <p class="tag">Bennu · UX · Produto · Design System</p>
         <h3>Vivo News</h3>
         <p>App de notícias da Vivo, com a criação de um Design System para ganhar consistência e velocidade de entrega.</p>
-        <a href="https://www.linkedin.com/posts/victorcatharino_vivonews-fiquebemfiqueemcasa-activity-6651081175269945345-hQ13" target="_blank" rel="noopener">Ver post no LinkedIn →</a>
+        <a href="https://www.linkedin.com/posts/victorcatharino_vivonews-fiquebemfiqueemcasa-activity-6651081175269945345-hQ13" target="_blank" rel="noopener">Ver post no LinkedIn →<span class="sr-only"> (abre em nova aba)</span></a>
       </article>
       <article class="case">
-        <div class="case-img"><img src="assets/img/oi-jornais.jpg" alt="Telas do app Oi Jornais" loading="lazy"></div>
+        <div class="case-img"><img decoding="async" width="859" height="652" src="assets/img/oi-jornais.jpg" alt="Telas do app Oi Jornais" loading="lazy"></div>
         <p class="tag">Bennu · UX · Produto · Mobile</p>
         <h3>Oi Jornais</h3>
         <p>Aplicativos de jornais da Oi: experiência de leitura digital pensada para o celular.</p>
-        <a href="https://www.behance.net/gallery/183687455/Oi-Jornais-Aplicativos-de-Jornais-da-Oi" target="_blank" rel="noopener">Ver no Behance →</a>
+        <a href="https://www.behance.net/gallery/183687455/Oi-Jornais-Aplicativos-de-Jornais-da-Oi" target="_blank" rel="noopener">Ver no Behance →<span class="sr-only"> (abre em nova aba)</span></a>
       </article>
       <article class="case">
-        <div class="case-img"><img src="assets/img/leia-online.jpg" alt="Telas do app Leia Online" loading="lazy"></div>
+        <div class="case-img"><img decoding="async" width="1393" height="660" src="assets/img/leia-online.jpg" alt="Telas do app Leia Online" loading="lazy"></div>
         <p class="tag">UX · Produto · Mobile</p>
         <h3>Leia Online</h3>
         <p>App de leitura digital de jornais e revistas.</p>
-        <a href="https://www.behance.net/gallery/183517561/App-Leia-Online" target="_blank" rel="noopener">Ver no Behance →</a>
+        <a href="https://www.behance.net/gallery/183517561/App-Leia-Online" target="_blank" rel="noopener">Ver no Behance →<span class="sr-only"> (abre em nova aba)</span></a>
       </article>
       <article class="case">
-        <div class="case-img"><img src="assets/img/oi-destinos.jpg" alt="Telas do app Oi Destinos" loading="lazy"></div>
+        <div class="case-img"><img decoding="async" width="1389" height="658" src="assets/img/oi-destinos.jpg" alt="Telas do app Oi Destinos" loading="lazy"></div>
         <p class="tag">UX · Produto · Mobile</p>
         <h3>Oi Destinos</h3>
         <p>App de conteúdo da Oi, com navegação por roteiros e revistas.</p>
-        <a href="https://www.behance.net/gallery/183514745/App-Oi-Destinos" target="_blank" rel="noopener">Ver no Behance →</a>
+        <a href="https://www.behance.net/gallery/183514745/App-Oi-Destinos" target="_blank" rel="noopener">Ver no Behance →<span class="sr-only"> (abre em nova aba)</span></a>
       </article>
       <article class="case">
-        <div class="case-img"><img src="assets/img/afiliados-resultados.jpg" alt="Resultados de NPS e participação do canal Afiliados" loading="lazy"></div>
+        <div class="case-img"><img decoding="async" width="1397" height="906" src="assets/img/afiliados-resultados.jpg" alt="Resultados de NPS e participação do canal Afiliados" loading="lazy"></div>
         <p class="tag">B2W Digital · Resultados</p>
         <h3>Afiliados.com em números</h3>
         <p><b>22%</b> de share: maior canal de tráfego das vendas 1P em 120 horas de evento. Pesquisa com afiliados, Hotjar e NPS guiando cada decisão.</p>
-        <a href="https://www.behance.net/gallery/183426517/Afiliadoscom-B2W-Digital-UI-e-UX-Design" target="_blank" rel="noopener">Ver no Behance →</a>
+        <a href="https://www.behance.net/gallery/183426517/Afiliadoscom-B2W-Digital-UI-e-UX-Design" target="_blank" rel="noopener">Ver no Behance →<span class="sr-only"> (abre em nova aba)</span></a>
       </article>
     </div>
   </div>
@@ -332,7 +335,7 @@
   <div class="wrap">
     <div class="case-cards">
       <article class="ccard">
-        <img src="assets/img/logo-acordo-fechado.png" alt="" class="ccard-logo">
+        <img decoding="async" width="160" height="69" src="assets/img/logo-acordo-fechado.png" alt="" class="ccard-logo">
         <p class="eyebrow olive">Acordo Fechado · Sócio · 2016–2019</p>
         <h3>Um MVP de 2 dias que continua crescendo.</h3>
         <p class="ccard-txt">Mediação e conciliação online: validamos o modelo antes de escrever o sistema.</p>
@@ -340,7 +343,7 @@
         <button type="button" class="btn btn-line" data-open="case-acordo">Ler o case →</button>
       </article>
       <article class="ccard">
-        <img src="assets/img/logo-getninjas.png" alt="" class="ccard-logo">
+        <img decoding="async" width="375" height="71" src="assets/img/logo-getninjas.png" alt="" class="ccard-logo">
         <p class="eyebrow olive">GetNinjas · Gerente de produto mobile · 2021–2022</p>
         <h3>A maior taxa de ativação da história da empresa.</h3>
         <p class="ccard-txt">Um pacote de moedas grátis, com o Banco PAN, para o profissional ver valor antes de pagar.</p>
@@ -348,7 +351,7 @@
         <button type="button" class="btn btn-line" data-open="case-getninjas">Ler o case →</button>
       </article>
       <article class="ccard">
-        <img src="assets/img/logo-getninjas.png" alt="" class="ccard-logo">
+        <img decoding="async" width="375" height="71" src="assets/img/logo-getninjas.png" alt="" class="ccard-logo">
         <p class="eyebrow olive">GetNinjas · Gerente de produto mobile · 2021–2022</p>
         <h3>+22% de downloads com a mensagem certa, na hora certa.</h3>
         <p class="ccard-txt">A tela que o cliente vê logo depois de pedir um serviço, reescrita para levá-lo ao app.</p>
@@ -356,7 +359,7 @@
         <button type="button" class="btn btn-line" data-open="case-getninjas-app">Ler o case →</button>
       </article>
       <article class="ccard">
-        <img src="assets/img/logo-justify.png" alt="" class="ccard-logo">
+        <img decoding="async" width="444" height="162" src="assets/img/logo-justify.png" alt="" class="ccard-logo">
         <p class="eyebrow olive">Justify · Sócio e head de produto · 2022–2024</p>
         <h3>Acesso à Justiça em 90% menos tempo.</h3>
         <p class="ccard-txt">Marketplace que conectava consumidores a advogados, e o que aprendi com o fim dele.</p>
@@ -364,7 +367,7 @@
         <button type="button" class="btn btn-line" data-open="case-justify">Ler o case →</button>
       </article>
       <article class="ccard">
-        <img src="assets/img/logo-eletrobras.png" alt="" class="ccard-logo">
+        <img decoding="async" width="402" height="249" src="assets/img/logo-eletrobras.png" alt="" class="ccard-logo">
         <p class="eyebrow olive">Eletrobras · PowerUp · 2024</p>
         <h3>Startups resolvendo dores reais de uma gigante de energia.</h3>
         <p class="ccard-txt">Inovação aberta do scouting à escala, com contratação pensada para startup.</p>
@@ -398,7 +401,7 @@
       </div>
       <button type="button" class="btn btn-line arc-open" data-open="case-architect">Ver as certificações em detalhe →</button>
     </div>
-    <img class="rounded" src="assets/img/anpei-architect.jpg" alt="Arte das certificações ANPEI Architect" loading="lazy">
+    <img decoding="async" width="1120" height="1300" class="rounded" src="assets/img/anpei-architect.jpg" alt="Arte das certificações ANPEI Architect" loading="lazy">
   </div>
 </section>
 
@@ -408,9 +411,9 @@
     <h2>Temas que ensino.</h2>
     <div class="chips big"><span>Gestão de produto</span><span>Gestão da inovação</span><span>UX e UX Research</span><span>UI e Design System</span><span>Inovação aberta</span><span>Metodologias ágeis</span><span>Branding</span><span>Mentoria: Startup Weekend e Hacking.Rio</span></div>
     <div class="cases">
-      <article class="case"><div class="case-img photo"><img src="assets/img/trein-ux.jpg" alt="Aula de UX, UI e Design Thinking" loading="lazy"></div><p class="tag">2018</p><h3>UX, UI e Design Thinking</h3><p>Aulas e workshops para formar times e disseminar a cultura de UX.</p><a href="https://www.linkedin.com/posts/victorcatharino_foi-muito-gratificante-poder-ministrar-aulas-activity-6392312804510035968-UM8x/" target="_blank" rel="noopener">Ver post no LinkedIn →</a></article>
-      <article class="case"><div class="case-img photo"><img src="assets/img/trein-ageis.jpg" alt="Workshop de metodologias ágeis" loading="lazy"></div><p class="tag">2025</p><h3>Metodologias ágeis</h3><p>Workshops com métodos e ferramentas para levar ideias à prática.</p><a href="https://www.linkedin.com/posts/victorcatharino_agilidade-scrum-kanban-activity-7223732029224296449-5fr7" target="_blank" rel="noopener">Ver post no LinkedIn →</a></article>
-      <article class="case"><div class="case-img photo"><img src="assets/img/trein-inovacao.jpg" alt="Workshop de gestão da inovação" loading="lazy"></div><p class="tag">2025</p><h3>Gestão da inovação</h3><p>Workshops de inovação para jovens cientistas e empresas do ecossistema.</p><a href="https://www.linkedin.com/posts/victorcatharino_inovaaexaeto-educaaexaeto-jovenscientistas-activity-7355226202653024256-wVsH" target="_blank" rel="noopener">Ver post no LinkedIn →</a></article>
+      <article class="case"><div class="case-img photo"><img decoding="async" width="499" height="768" src="assets/img/trein-ux.jpg" alt="Aula de UX, UI e Design Thinking" loading="lazy"></div><p class="tag">2018</p><h3>UX, UI e Design Thinking</h3><p>Aulas e workshops para formar times e disseminar a cultura de UX.</p><a href="https://www.linkedin.com/posts/victorcatharino_foi-muito-gratificante-poder-ministrar-aulas-activity-6392312804510035968-UM8x/" target="_blank" rel="noopener">Ver post no LinkedIn →<span class="sr-only"> (abre em nova aba)</span></a></article>
+      <article class="case"><div class="case-img photo"><img decoding="async" width="498" height="588" src="assets/img/trein-ageis.jpg" alt="Workshop de metodologias ágeis" loading="lazy"></div><p class="tag">2025</p><h3>Metodologias ágeis</h3><p>Workshops com métodos e ferramentas para levar ideias à prática.</p><a href="https://www.linkedin.com/posts/victorcatharino_agilidade-scrum-kanban-activity-7223732029224296449-5fr7" target="_blank" rel="noopener">Ver post no LinkedIn →<span class="sr-only"> (abre em nova aba)</span></a></article>
+      <article class="case"><div class="case-img photo"><img decoding="async" width="495" height="608" src="assets/img/trein-inovacao.jpg" alt="Workshop de gestão da inovação" loading="lazy"></div><p class="tag">2025</p><h3>Gestão da inovação</h3><p>Workshops de inovação para jovens cientistas e empresas do ecossistema.</p><a href="https://www.linkedin.com/posts/victorcatharino_inovaaexaeto-educaaexaeto-jovenscientistas-activity-7355226202653024256-wVsH" target="_blank" rel="noopener">Ver post no LinkedIn →<span class="sr-only"> (abre em nova aba)</span></a></article>
     </div>
   </div>
 </section>
@@ -460,7 +463,7 @@
         <p class="tag">2026 · Projeto de mestrado · Produto end-to-end · IA aplicada</p>
         <h3 class="feature-title">SIPC: plataforma de estudos com IA</h3>
         <p class="lead">Transforma o programa de qualquer prova num plano de estudo diário e vai direto ao essencial: o aluno abre a plataforma e sabe, sem pensar, o que estudar agora.</p>
-        <div class="hero-actions"><a class="btn btn-lime" href="https://victorvcs.github.io/sipc/" target="_blank" rel="noopener">Conheça a plataforma →</a></div>
+        <div class="hero-actions"><a class="btn btn-lime" href="https://victorvcs.github.io/sipc/" target="_blank" rel="noopener">Conheça a plataforma →<span class="sr-only"> (abre em nova aba)</span></a></div>
       </div>
 
       <div class="stats three">
@@ -470,10 +473,10 @@
       </div>
 
       <div class="mk-stage">
-        <figure class="mk mk-browser mk-main"><span class="mk-tag">Trilha automática</span><div class="mk-bar"><i></i><i></i><i></i><span>victorvcs.github.io/sipc</span></div><img src="assets/img/sipc-trilha.jpg" alt="Tela da trilha da semana, com tópicos novos e revisões de cada dia" loading="lazy"></figure>
-        <figure class="mk mk-phone"><span class="mk-tag">No celular</span><img src="assets/img/sipc-celular.jpg" alt="Painel do SIPC no celular, com ritmo do plano e indicadores" loading="lazy"></figure>
-        <figure class="mk mk-card mk-const"><span class="mk-tag">Constância</span><img src="assets/img/sipc-constancia.jpg" alt="Mapa de constância com os minutos de estudo por dia" loading="lazy"></figure>
-        <figure class="mk mk-card mk-strip"><span class="mk-tag">Painel</span><img src="assets/img/sipc-indicadores.jpg" alt="Indicadores do painel: estudo na semana, acerto, revisões e dias seguidos" loading="lazy"></figure>
+        <figure class="mk mk-browser mk-main"><span class="mk-tag">Trilha automática</span><div class="mk-bar"><i></i><i></i><i></i><span>victorvcs.github.io/sipc</span></div><img decoding="async" width="1032" height="520" src="assets/img/sipc-trilha.jpg" alt="Tela da trilha da semana, com tópicos novos e revisões de cada dia" loading="lazy"></figure>
+        <figure class="mk mk-phone"><span class="mk-tag">No celular</span><img decoding="async" width="375" height="732" src="assets/img/sipc-celular.jpg" alt="Painel do SIPC no celular, com ritmo do plano e indicadores" loading="lazy"></figure>
+        <figure class="mk mk-card mk-const"><span class="mk-tag">Constância</span><img decoding="async" width="324" height="303" src="assets/img/sipc-constancia.jpg" alt="Mapa de constância com os minutos de estudo por dia" loading="lazy"></figure>
+        <figure class="mk mk-card mk-strip"><span class="mk-tag">Painel</span><img decoding="async" width="1004" height="122" src="assets/img/sipc-indicadores.jpg" alt="Indicadores do painel: estudo na semana, acerto, revisões e dias seguidos" loading="lazy"></figure>
       </div>
       <div class="sipc-more"><button type="button" class="btn btn-line" data-open="case-sipc">Ler o case completo: tese, validação e como construí →</button></div>
     </article>
@@ -503,13 +506,13 @@
     <hr class="bar">
     <p class="hero-name">Victor Catharino</p>
     <p class="hero-role"><a href="mailto:victorvcs@gmail.com">victorvcs@gmail.com</a></p>
-    <p class="hero-role"><a href="https://www.linkedin.com/in/victorcatharino/" target="_blank" rel="noopener">linkedin.com/in/victorcatharino</a></p>
+    <p class="hero-role"><a href="https://www.linkedin.com/in/victorcatharino/" target="_blank" rel="noopener">linkedin.com/in/victorcatharino<span class="sr-only"> (abre em nova aba)</span></a></p>
     <div class="hero-actions">
-      <a class="btn btn-lime" href="https://wa.me/5521986517152?text=Ol%C3%A1%2C%20Victor%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Falar pelo WhatsApp →</a>
-      <a class="btn btn-ghost" href="https://drive.google.com/file/d/1_82c2J2s6WAMPSWzd-rLjINIOh1xkbjq/view" target="_blank" rel="noopener">Baixar currículo</a>
+      <a class="btn btn-lime" href="https://wa.me/5521986517152?text=Ol%C3%A1%2C%20Victor%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">Falar pelo WhatsApp →<span class="sr-only"> (abre em nova aba)</span></a>
+      <a class="btn btn-ghost" href="https://drive.google.com/file/d/1_82c2J2s6WAMPSWzd-rLjINIOh1xkbjq/view" target="_blank" rel="noopener">Baixar currículo<span class="sr-only"> (abre em nova aba)</span></a>
     </div>
   </div>
-  <img class="hero-img" src="assets/img/capa-trilha-2.jpg" alt="Pessoas caminhando em trilha de montanha" loading="lazy">
+  <img decoding="async" width="1600" height="1007" class="hero-img" src="assets/img/capa-trilha-2.jpg" alt="Pessoas caminhando em trilha de montanha" loading="lazy">
 </section>
 
 </main>
@@ -535,7 +538,7 @@
   <div class="article-bar"><button type="button" class="article-close" data-close>← Voltar ao portfólio</button><span class="article-bar-title">Acordo Fechado</span><span class="article-progress" aria-hidden="true"></span></div>
   <article class="article-body">
     <div class="biz-head">
-      <img src="assets/img/logo-acordo-fechado.png" alt="Acordo Fechado">
+      <img decoding="async" loading="lazy" width="160" height="69" src="assets/img/logo-acordo-fechado.png" alt="Acordo Fechado">
       <div>
         <p class="eyebrow olive">04 · Acordo Fechado · Sócio de produto, marketing e tecnologia · 2016–2019</p>
         <h2>Um MVP de 2 dias que continua crescendo.</h2>
@@ -571,29 +574,29 @@
       <div class="af-step">
         <div><p class="layer-key">2017 · MVP concierge</p><p class="body">Antes de qualquer sistema, a operação rodou de forma manual: um fluxo desenhado entre clientes, advogados e operação, e os primeiros relatórios de resultado enviados por e-mail para cada escritório.</p></div>
         <div class="jx-shots two">
-          <figure><img src="assets/img/acordo-fluxo.jpg" alt="Fluxo da operação manual entre clientes, advogados e operação" loading="lazy"><figcaption>O fluxo da operação, desenhado antes do sistema.</figcaption></figure>
-          <figure><img src="assets/img/acordo-relatorio-2017.jpg" alt="Relatório de resultados enviado por e-mail em 2017, com dados de clientes desfocados" loading="lazy"><figcaption>Relatório por e-mail: 772 casos tratados e 59% de êxito num único escritório.</figcaption></figure>
+          <figure><img decoding="async" width="661" height="585" src="assets/img/acordo-fluxo.jpg" alt="Fluxo da operação manual entre clientes, advogados e operação" loading="lazy"><figcaption>O fluxo da operação, desenhado antes do sistema.</figcaption></figure>
+          <figure><img decoding="async" width="1165" height="1030" src="assets/img/acordo-relatorio-2017.jpg" alt="Relatório de resultados enviado por e-mail em 2017, com dados de clientes desfocados" loading="lazy"><figcaption>Relatório por e-mail: 772 casos tratados e 59% de êxito num único escritório.</figcaption></figure>
         </div>
       </div>
 
       <div class="af-step">
         <div><p class="layer-key">2017 · Primeira versão em 2 dias</p><p class="body">Um sistema em WordPress, com login e gráficos da operação vindos do Google Sheets, entregue em white label para cada escritório. Validamos com os 15 primeiros clientes e a empresa passou a se pagar.</p></div>
         <div class="jx-shots two">
-          <figure><img src="assets/img/acordo-v1-dashboard.jpg" alt="Dashboard da primeira versão, com acordos fechados e percentual de êxito por mês" loading="lazy"><figcaption>Dashboard da primeira versão.</figcaption></figure>
-          <figure><img src="assets/img/acordo-audiencias.jpg" alt="Gráfico de audiências evitadas por mês, total de 5.859" loading="lazy"><figcaption>5.859 audiências evitadas: o valor que o escritório via.</figcaption></figure>
+          <figure><img decoding="async" width="1029" height="909" src="assets/img/acordo-v1-dashboard.jpg" alt="Dashboard da primeira versão, com acordos fechados e percentual de êxito por mês" loading="lazy"><figcaption>Dashboard da primeira versão.</figcaption></figure>
+          <figure><img decoding="async" width="764" height="676" src="assets/img/acordo-audiencias.jpg" alt="Gráfico de audiências evitadas por mês, total de 5.859" loading="lazy"><figcaption>5.859 audiências evitadas: o valor que o escritório via.</figcaption></figure>
         </div>
       </div>
 
       <div class="af-step">
         <div><p class="layer-key">2018 · Plataforma própria (v2)</p><p class="body">Com o modelo validado e a empresa no breakeven, investimos numa plataforma desenvolvida do zero, com programador contratado: indicadores e dashboards de acompanhamento dos acordos por empresa e por equipe.</p></div>
-        <figure class="jx-fig"><img src="assets/img/acordo-v2.jpg" alt="Sistema v2 com total de acordos, casos enviados, percentual de êxito e tíquete médio" loading="lazy"></figure>
+        <figure class="jx-fig"><img decoding="async" width="1366" height="1204" src="assets/img/acordo-v2.jpg" alt="Sistema v2 com total de acordos, casos enviados, percentual de êxito e tíquete médio" loading="lazy"></figure>
       </div>
 
       <div class="af-step">
         <div><p class="layer-key">2019 · Gestão da operação (v3)</p><p class="body">Terceira geração: painel de indicadores por canal (e-mail, WhatsApp, ligação) e gestão dos casos em quadro de tarefas, por prazo.</p></div>
         <div class="jx-shots two">
-          <figure><img src="assets/img/acordo-v3-painel.jpg" alt="Painel da v3 com acordos, casos enviados e produtividade por canal" loading="lazy"><figcaption>Painel de indicadores da v3.</figcaption></figure>
-          <figure><img src="assets/img/acordo-v3-tarefas.jpg" alt="Quadro de tarefas da v3: atrasado, hoje, amanhã e essa semana" loading="lazy"><figcaption>Quadro de tarefas da operação.</figcaption></figure>
+          <figure><img decoding="async" width="1366" height="1714" src="assets/img/acordo-v3-painel.jpg" alt="Painel da v3 com acordos, casos enviados e produtividade por canal" loading="lazy"><figcaption>Painel de indicadores da v3.</figcaption></figure>
+          <figure><img decoding="async" width="1162" height="1000" src="assets/img/acordo-v3-tarefas.jpg" alt="Quadro de tarefas da v3: atrasado, hoje, amanhã e essa semana" loading="lazy"><figcaption>Quadro de tarefas da operação.</figcaption></figure>
         </div>
       </div>
 
@@ -610,7 +613,7 @@
         <div class="stat"><p class="num">+300 mil</p><p>advogados que usaram a plataforma</p></div>
         <div class="stat"><p class="num">+$1,2 bi</p><p>em valores transacionados</p></div>
       </div>
-      <figure class="jx-fig"><img src="assets/img/acordo-hoje-2025.jpg" alt="Site atual do Acordo Fechado com os números da plataforma e depoimento de cliente" loading="lazy"></figure>
+      <figure class="jx-fig"><img decoding="async" width="1400" height="887" src="assets/img/acordo-hoje-2025.jpg" alt="Site atual do Acordo Fechado com os números da plataforma e depoimento de cliente" loading="lazy"></figure>
       <div class="arc-diff cg-learn">
         <p class="eyebrow">O que levo</p>
         <p>Validar antes de construir. O MVP manual e o sistema de 2 dias provaram que havia demanda e pagaram a empresa. Só então o investimento em tecnologia fez sentido. Me orgulho de ver a empresa de pé e crescendo até hoje.</p>
@@ -625,7 +628,7 @@
   <div class="article-bar"><button type="button" class="article-close" data-close>← Voltar ao portfólio</button><span class="article-bar-title">GetNinjas · Ativação</span><span class="article-progress" aria-hidden="true"></span></div>
   <article class="article-body">
     <div class="biz-head">
-      <img src="assets/img/logo-getninjas.png" alt="GetNinjas">
+      <img decoding="async" loading="lazy" width="375" height="71" src="assets/img/logo-getninjas.png" alt="GetNinjas">
       <div>
         <p class="eyebrow olive">04 · GetNinjas · Gerente de produto mobile · 2021–2022</p>
         <h2>A maior taxa de ativação da história da empresa.</h2>
@@ -659,7 +662,7 @@
       <p class="eyebrow olive">A hipótese e o experimento</p>
       <h3 class="sub-title">Se o profissional experimentar sem risco, ele vê valor e compra o próprio pacote.</h3>
       <div class="gn-exp">
-        <figure class="gn-phone"><img src="assets/img/getninjas-pacotes.png" alt="Tela de pacotes do app do profissional com a oferta Banco PAN: pacote de experimentação de 300 moedas grátis" loading="lazy"></figure>
+        <figure class="gn-phone"><img decoding="async" width="383" height="727" src="assets/img/getninjas-pacotes.png" alt="Tela de pacotes do app do profissional com a oferta Banco PAN: pacote de experimentação de 300 moedas grátis" loading="lazy"></figure>
         <div>
           <ol class="arc-steps gn-steps">
             <li><span>01</span><h3>Parceria com o Banco PAN</h3><p>O profissional que abrisse uma conta no Banco PAN ganhava um pacote de experimentação de moedas, grátis.</p></li>
@@ -691,7 +694,7 @@
   <div class="article-bar"><button type="button" class="article-close" data-close>← Voltar ao portfólio</button><span class="article-bar-title">GetNinjas · Download do app</span><span class="article-progress" aria-hidden="true"></span></div>
   <article class="article-body">
     <div class="biz-head">
-      <img src="assets/img/logo-getninjas.png" alt="GetNinjas">
+      <img decoding="async" loading="lazy" width="375" height="71" src="assets/img/logo-getninjas.png" alt="GetNinjas">
       <div>
         <p class="eyebrow olive">04 · GetNinjas · Gerente de produto mobile · 2021–2022</p>
         <h2>+22% de downloads com a mensagem certa, na hora certa.</h2>
@@ -708,9 +711,9 @@
         <div><p class="layer-key">A hipótese</p><p>Se a tela pós-pedido mostrasse o que só o app oferece, como acompanhar o pedido com notificações, comparar perfis e conversar no chat (que o site não tinha), mais clientes baixariam o app.</p></div>
       </div>
       <div class="gn-ba">
-        <figure><span class="gn-tag">Antes</span><img src="assets/img/getninjas-pos-pedido-antes.png" alt="Tela antiga pós-pedido, amarela, com o convite genérico para baixar o app e acompanhar o pedido" loading="lazy"><figcaption>Um convite genérico: baixe o app e acompanhe seu pedido.</figcaption></figure>
+        <figure><span class="gn-tag">Antes</span><img decoding="async" width="351" height="663" src="assets/img/getninjas-pos-pedido-antes.png" alt="Tela antiga pós-pedido, amarela, com o convite genérico para baixar o app e acompanhar o pedido" loading="lazy"><figcaption>Um convite genérico: baixe o app e acompanhe seu pedido.</figcaption></figure>
         <span class="gn-arrow" aria-hidden="true">→</span>
-        <figure><span class="gn-tag now">Depois</span><img src="assets/img/getninjas-pos-pedido-depois.png" alt="Nova tela pós-pedido com banner do app, status do pedido em etapas e convite para comparar perfis e conversar com profissionais" loading="lazy"><figcaption>Banner do app com avaliação, o pedido em etapas e o valor do app: comparar perfis e conversar com os profissionais.</figcaption></figure>
+        <figure><span class="gn-tag now">Depois</span><img decoding="async" width="367" height="557" src="assets/img/getninjas-pos-pedido-depois.png" alt="Nova tela pós-pedido com banner do app, status do pedido em etapas e convite para comparar perfis e conversar com profissionais" loading="lazy"><figcaption>Banner do app com avaliação, o pedido em etapas e o valor do app: comparar perfis e conversar com os profissionais.</figcaption></figure>
       </div>
       <div class="stats three gn-res">
         <div class="stat"><p class="num">+22%</p><p>na taxa de download do app, num experimento de 2 semanas comparado à versão anterior</p></div>
@@ -740,7 +743,7 @@
   <div class="article-bar"><button type="button" class="article-close" data-close>← Voltar ao portfólio</button><span class="article-bar-title">Justify</span><span class="article-progress" aria-hidden="true"></span></div>
   <article class="article-body">
     <div class="biz-head">
-      <img src="assets/img/logo-justify.png" alt="Justify">
+      <img decoding="async" loading="lazy" width="444" height="162" src="assets/img/logo-justify.png" alt="Justify">
       <div>
         <p class="eyebrow olive">04 · Justify · Sócio e head de produto · 2022–2024</p>
         <h2>Acesso à Justiça em 90% menos tempo.</h2>
@@ -794,9 +797,9 @@
       <h3 class="sub-title">Um canal digital que junta consumidor, advogado e operação.</h3>
       <p class="body">Organizamos num só lugar toda a documentação e a comunicação entre as partes, o que reduziu em 90% o tempo para ajuizar uma ação. North Star: taxa de distribuição de casos por mês.</p>
       <div class="jx-shots">
-        <figure><img src="assets/img/justify-app-autor.jpg" alt="Telas do app do cliente: boas-vindas, notificações, documentos e linha do tempo do caso" loading="lazy"><figcaption><b>App do cliente.</b> O consumidor acompanha o caso, recebe notificações e envia documentos sem sair do app.</figcaption></figure>
-        <figure><img src="assets/img/justify-app-advogado-v2.jpg" alt="Telas do app do advogado: casos disponíveis, detalhes e aceite do caso" loading="lazy"><figcaption><b>App do advogado.</b> O advogado recebe os casos disponíveis, analisa os detalhes e aceita o caso pelo celular.</figcaption></figure>
-        <figure class="wide"><img src="assets/img/justify-operacao.jpg" alt="Sistema da operação em quadro por etapas, do cadastro à distribuição" loading="lazy"><figcaption><b>Sistema da operação.</b> O back-office que conecta os dois lados: casos organizados por etapa, do cadastro à distribuição.</figcaption></figure>
+        <figure><img decoding="async" width="1265" height="715" src="assets/img/justify-app-autor.jpg" alt="Telas do app do cliente: boas-vindas, notificações, documentos e linha do tempo do caso" loading="lazy"><figcaption><b>App do cliente.</b> O consumidor acompanha o caso, recebe notificações e envia documentos sem sair do app.</figcaption></figure>
+        <figure><img decoding="async" width="1265" height="710" src="assets/img/justify-app-advogado-v2.jpg" alt="Telas do app do advogado: casos disponíveis, detalhes e aceite do caso" loading="lazy"><figcaption><b>App do advogado.</b> O advogado recebe os casos disponíveis, analisa os detalhes e aceita o caso pelo celular.</figcaption></figure>
+        <figure class="wide"><img decoding="async" width="1273" height="659" src="assets/img/justify-operacao.jpg" alt="Sistema da operação em quadro por etapas, do cadastro à distribuição" loading="lazy"><figcaption><b>Sistema da operação.</b> O back-office que conecta os dois lados: casos organizados por etapa, do cadastro à distribuição.</figcaption></figure>
       </div>
     </section>
 
@@ -832,8 +835,8 @@
         </table>
       </div>
       <div class="jx-shots two">
-        <figure><img src="assets/img/justify-funil-2022.jpg" alt="Funil de aquisição em 2022, com 5% de take rate" loading="lazy"><figcaption>Funil de aquisição em 2022.</figcaption></figure>
-        <figure><img src="assets/img/justify-funil-2023.jpg" alt="Funil de aquisição em 2023, com 15% de take rate" loading="lazy"><figcaption>Funil de aquisição em 2023.</figcaption></figure>
+        <figure><img decoding="async" width="1269" height="711" src="assets/img/justify-funil-2022.jpg" alt="Funil de aquisição em 2022, com 5% de take rate" loading="lazy"><figcaption>Funil de aquisição em 2022.</figcaption></figure>
+        <figure><img decoding="async" width="1267" height="711" src="assets/img/justify-funil-2023.jpg" alt="Funil de aquisição em 2023, com 15% de take rate" loading="lazy"><figcaption>Funil de aquisição em 2023.</figcaption></figure>
       </div>
     </section>
 
@@ -869,8 +872,8 @@
 
       <div class="cg-report">
         <div class="cg-docs">
-          <img src="assets/img/justify-relatorio-p1.jpg" alt="Página 1 do modelo de relatório jurídico: chance de sucesso, valor provável e o que fazer antes do Judiciário" loading="lazy">
-          <img src="assets/img/justify-relatorio-p2.jpg" alt="Página 2 do modelo de relatório jurídico: o que fazer se não houver solução amigável e como seguir com o caso" loading="lazy">
+          <img decoding="async" width="820" height="1128" src="assets/img/justify-relatorio-p1.jpg" alt="Página 1 do modelo de relatório jurídico: chance de sucesso, valor provável e o que fazer antes do Judiciário" loading="lazy">
+          <img decoding="async" width="820" height="1133" src="assets/img/justify-relatorio-p2.jpg" alt="Página 2 do modelo de relatório jurídico: o que fazer se não houver solução amigável e como seguir com o caso" loading="lazy">
         </div>
         <div>
           <p class="layer-key">O entregável</p>
@@ -915,7 +918,7 @@
         <div class="stat"><p class="num">R$8,3 mi</p><p>no cenário otimista, com 14.995 casos distribuídos</p></div>
         <div class="stat"><p class="num">RJ + SP</p><p>expansão: 85% do investimento no Rio de Janeiro e 15% em São Paulo</p></div>
       </div>
-      <figure class="jx-fig"><img src="assets/img/justify-projecao.jpg" alt="Tabela de projeção de ganhos em 24 meses com R$ 700 mil em mídia paga" loading="lazy"></figure>
+      <figure class="jx-fig"><img decoding="async" width="1270" height="712" src="assets/img/justify-projecao.jpg" alt="Tabela de projeção de ganhos em 24 meses com R$ 700 mil em mídia paga" loading="lazy"></figure>
     </section>
     <p class="eyebrow olive jx-close">Tração, desfecho e aprendizados</p>
     <div class="traction">
@@ -965,7 +968,7 @@
   <div class="article-bar"><button type="button" class="article-close" data-close>← Voltar ao portfólio</button><span class="article-bar-title">Eletrobras · PowerUp</span><span class="article-progress" aria-hidden="true"></span></div>
   <article class="article-body">
     <div class="biz-head">
-      <img src="assets/img/logo-eletrobras.png" alt="Eletrobras">
+      <img decoding="async" loading="lazy" width="402" height="249" src="assets/img/logo-eletrobras.png" alt="Eletrobras">
       <div>
         <p class="eyebrow olive">04 · Eletrobras · PowerUp · Inovação aberta · 2024</p>
         <h2>Startups resolvendo dores reais de uma gigante de energia.</h2>
@@ -1099,7 +1102,7 @@
       <p class="tag">2026 · Projeto de mestrado · Produto end-to-end · IA aplicada</p>
       <h3 class="feature-title">SIPC: plataforma de estudos com IA</h3>
       <p class="lead">Transforma o programa de qualquer prova num plano de estudo diário e vai direto ao essencial: o aluno abre a plataforma e sabe, sem pensar, o que estudar agora.</p>
-      <div class="hero-actions"><a class="btn btn-lime" href="https://victorvcs.github.io/sipc/" target="_blank" rel="noopener">Conheça a plataforma →</a></div>
+      <div class="hero-actions"><a class="btn btn-lime" href="https://victorvcs.github.io/sipc/" target="_blank" rel="noopener">Conheça a plataforma →<span class="sr-only"> (abre em nova aba)</span></a></div>
     </div>
       <div class="split feature-split">
         <div class="stack">
@@ -1216,14 +1219,15 @@
       <div class="stack-row"><p class="eyebrow olive">Tecnologias</p><p class="arc-cos"><span>HTML, CSS e JavaScript</span><span>Gemini (Flash-Lite)</span><span>Firebase AI Logic</span><span>Firebase Authentication</span><span>Cloud Firestore</span><span>Firebase App Check</span><span>PDF.js</span><span>YouTube Data API</span><span>Node.js (testes)</span><span>GitHub Pages</span></p></div>
 
       <div class="mk-pair">
-        <figure class="mk mk-browser"><span class="mk-tag">Mapa visual</span><div class="mk-bar"><i></i><i></i><i></i><span>victorvcs.github.io/sipc</span></div><img src="assets/img/sipc-mapa.jpg" alt="Mapa visual gerado pela IA para um tópico" loading="lazy"></figure>
-        <figure class="mk mk-card"><span class="mk-tag">Domínio por matéria</span><img src="assets/img/sipc-dominio.jpg" alt="Domínio por matéria, do que vale mais para o que vale menos" loading="lazy"></figure>
+        <figure class="mk mk-browser"><span class="mk-tag">Mapa visual</span><div class="mk-bar"><i></i><i></i><i></i><span>victorvcs.github.io/sipc</span></div><img decoding="async" width="740" height="470" src="assets/img/sipc-mapa.jpg" alt="Mapa visual gerado pela IA para um tópico" loading="lazy"></figure>
+        <figure class="mk mk-card"><span class="mk-tag">Domínio por matéria</span><img decoding="async" width="668" height="586" src="assets/img/sipc-dominio.jpg" alt="Domínio por matéria, do que vale mais para o que vale menos" loading="lazy"></figure>
       </div>
 
-    <footer class="article-end"><div class="article-end-cta"><p class="eyebrow olive">Saiba mais</p><h3 class="sub-title">Veja o SIPC funcionando.</h3><p class="body">A plataforma está no ar: monte uma trilha, estude um tópico e veja a revisão em ação.</p><div class="hero-actions"><a class="btn btn-lime" href="https://victorvcs.github.io/sipc/" target="_blank" rel="noopener">Conheça a plataforma →</a></div></div><button type="button" class="btn btn-line" data-close>← Voltar ao portfólio</button></footer>
+    <footer class="article-end"><div class="article-end-cta"><p class="eyebrow olive">Saiba mais</p><h3 class="sub-title">Veja o SIPC funcionando.</h3><p class="body">A plataforma está no ar: monte uma trilha, estude um tópico e veja a revisão em ação.</p><div class="hero-actions"><a class="btn btn-lime" href="https://victorvcs.github.io/sipc/" target="_blank" rel="noopener">Conheça a plataforma →<span class="sr-only"> (abre em nova aba)</span></a></div></div><button type="button" class="btn btn-line" data-close>← Voltar ao portfólio</button></footer>
   </article>
 </dialog>
 
+<a href="#topo" class="to-top" aria-label="Voltar ao topo">↑</a>
 <script src="collage.js" defer></script>
 <script src="story.js" defer></script>
 </body>
