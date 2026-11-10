@@ -1,25 +1,28 @@
 # Victor Catharino · Portfólio
 
-**Gerente de Produto e Inovação · Vibe Coder**
+**Gerente de Produto e Inovação · Soluções com IA**
 
-> Do código à estratégia. E de volta ao código.
+> Do código à estratégia. Agora, IA para validar negócios.
 
-17+ anos criando produtos e jornadas de usuário, integrando tecnologia, design e estratégia de negócio. Comecei como desenvolvedor, passei por design e UX, cheguei a produto, negócio e inovação, e agora volto ao código com a inteligência artificial (vibe coding).
+17+ anos criando produtos e jornadas de usuário, integrando tecnologia, design e estratégia de negócio. Comecei no código, passei por design e UX, cheguei a produto, negócio e inovação. Hoje uso a visão de negócio e a inteligência artificial para criar soluções, validar produtos e gerar valor para usuários e clientes.
 
 🔗 **Site:** https://victorvcs.github.io
 
 ## O que tem no portfólio
 
-1. **Quem sou:** formação, especialidades e resultados
-2. **Trajetória:** B2W, Acordo Fechado, Bennu, GetNinjas, Justify, Eletrobras e ANPEI
-3. **Design & UX:** Afiliados.com, Vivo News, Oi Jornais, Leia Online, Oi Destinos
-4. **Produto & negócios:** Acordo Fechado (do MVP de 2 dias ao exit) e Justify
-5. **Educação:** ANPEI Architect e treinamentos
-6. **De volta ao código:** IA, vibe coding e novos estudos, com o SIPC, uma plataforma de estudos com IA que construí do zero
+1. **Quem sou:** formação, especialidades e resultados, com o contexto de cada número
+2. **Trajetória:** B2W, Acordo Fechado, Bennu, GetNinjas, Justify, Eletrobras e ANPEI, em linha do tempo com as marcas de cada fase
+3. **Experiências:**
+   - Design & UX: Afiliados.com, Vivo News, Oi Jornais, Leia Online, Oi Destinos
+   - Produto & negócios: Acordo Fechado (do MVP de 2 dias ao exit), GetNinjas (ativação e download do app), Justify (do problema ao Caso Guiado) e Eletrobras (inovação aberta com startups)
+   - Educação: certificações ANPEI Architect e treinamentos
+4. **Produtos com IA:** o SIPC, plataforma de estudos com IA e artefato da minha proposta para o Mestrado Profissional em Organização do Conhecimento, Tecnologias e Sociedade da UFRJ
+
+Cada case abre como um artigo, com contexto, decisões, resultados e aprendizados.
 
 ## Como foi feito
 
-Site estático (HTML e CSS, sem framework), construído com IA (Claude Code) a partir do meu currículo e da minha apresentação de jornada profissional. Publicado com GitHub Pages.
+Site estático (HTML, CSS e JavaScript, sem framework), construído com IA a partir do meu currículo e da minha apresentação de jornada profissional. Publicado com GitHub Pages.
 
 ## Contato
 
