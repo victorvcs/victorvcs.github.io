@@ -20,6 +20,13 @@ const TOOLS = {
   css: { tip: 'CSS', bg: '#1572B6', html: '<svg viewBox="0 0 24 24"><path d="M4 2h16l-1.5 17L12 22l-6.5-3z" fill="#fff" opacity=".25"/><path d="M8.3 7h7.3l-.6 6.3L12 14.4l-2.8-.9-.2-2M8.6 10.3h6.6" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>' },
   ppt: { tip: 'PowerPoint', bg: '#C43E1C', html: '<span style="color:#fff">P</span>' },
   notion: { tip: 'Notion', bg: '#fff', html: '<span style="color:#17191E;font-family:Georgia,serif;font-weight:700;border:2px solid #17191E;border-radius:4px;padding:0 4px">N</span>' },
+  lean: { tip: 'Lean Startup', bg: '#17191E', html: '<svg viewBox="0 0 24 24"><g fill="none" stroke="#B8CC1F" stroke-width="2.4" stroke-linecap="round"><path d="M12 4a8 8 0 1 1-7.4 5"/><path d="M4 4v5h5"/></g></svg>' },
+  mvp: { tip: 'MVP', bg: '#B8CC1F', html: '<span style="color:#17191E;font-size:.62em;font-family:Manrope;font-weight:800">MVP</span>' },
+  poc: { tip: 'Prova de conceito (POC)', bg: '#fff', html: '<span style="color:#17191E;font-size:.62em;font-family:Manrope;font-weight:800">POC</span>' },
+  trl: { tip: 'TRL: maturidade tecnológica', bg: '#5F6B00', html: '<svg viewBox="0 0 24 24" fill="#fff"><rect x="3" y="16" width="3.4" height="5" rx="1"/><rect x="8.2" y="12" width="3.4" height="9" rx="1"/><rect x="13.4" y="8" width="3.4" height="13" rx="1"/><rect x="18.6" y="3" width="3.4" height="18" rx="1"/></svg>' },
+  funding: { tip: 'Funding: fomento e investimento', bg: '#2DBE60', html: '<span style="color:#fff;font-size:.7em;font-family:Manrope;font-weight:800">R$</span>' },
+  deeptech: { tip: 'Deep Tech', bg: '#3B2A8F', html: '<svg viewBox="0 0 24 24"><g fill="none" stroke="#fff" stroke-width="1.8"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></g><circle cx="12" cy="12" r="2" fill="#B8CC1F"/></svg>' },
+  growth: { tip: 'Experimentos de growth', bg: '#F28C28', html: '<svg viewBox="0 0 24 24"><g fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></g></svg>' },
   bi: { tip: 'Power BI / dados', bg: '#F2C811', html: '<svg viewBox="0 0 24 24"><rect x="3" y="12" width="4.5" height="9" rx="1.5" fill="#17191E"/><rect x="9.75" y="7" width="4.5" height="14" rx="1.5" fill="#17191E"/><rect x="16.5" y="3" width="4.5" height="18" rx="1.5" fill="#17191E"/></svg>' },
 };
 const paintTools = root => root.querySelectorAll('.tool[data-t]').forEach(el => {
